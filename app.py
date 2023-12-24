@@ -33,7 +33,8 @@ def get_prompt_output(question, transcript):
     
     return(prompt_output)
 
-st.title("Chat")
+st.title("Modal Docs Bot Chat")
+st.text("Ask questions about Modal Lab's documentation: https://modal.com/docs/examples"
 
 Tokenizer.initialize()
 kb = KnowledgeBase(index_name = environ["INDEX_NAME"])
