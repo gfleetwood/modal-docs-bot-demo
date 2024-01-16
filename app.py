@@ -17,7 +17,9 @@ def get_prompt_output(question, transcript):
     
     {}
     
-    The text below is the knowledge you need to answer the user's question. Only use information from what is given below, and give code examples when appropriate. 
+    The text below is the knowledge you need to answer the user's question. 
+    Only use information from what is given below, and give code examples when appropriate. 
+    Please cite the sources.
     If the question is not related to the sources, reply "I don't know":
     
     {}
