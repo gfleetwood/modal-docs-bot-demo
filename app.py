@@ -28,7 +28,9 @@ def get_prompt_output(question, transcript):
     messages = [{"role": "system", "content": prompt_text.format(question, transcript)}]
     
     response = openai.chat.completions.create(
-        model = "gpt-3.5-turbo", messages = messages, max_tokens = 1000, temperature = 0
+        # gpt-4-1106-preview
+        # gpt-3.5-turbo
+        model = "gpt-4-1106-preview", messages = messages, max_tokens = 1000, temperature = 0
     )  
     
     prompt_output = response.choices[0].message.content
